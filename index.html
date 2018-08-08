@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title> &#9655; thrill </title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.js" integrity="sha256-L6ppAjL6jgtRmfiuigeEE5AwNI2pH/X9IBbPyanJeZw=" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <a href="#"><img src="images/tent.png" alt="tent icon"></a>
+  <div id="container">
+      <div id="daytime">
+        <h1 class= "daytime"> <a class="day" href="#">  daytime </a></h1>
+    </div>
+    <div class = "between"></div>
+    <div id ="nite">
+      <h1 class = "nite"> <a class= "night" href="#"> <span class="abe"> nitelife </span></a></h1>
+    </div>
+  </div>
+
+<div id="margin-left"> </div>
+
+<script>
+$( document ).ready(function() {
+
+  $(".night").click(function(){
+    $("body").addClass("background-night");
+    $("html").addClass("gradient-night");
+    $(".between").addClass("between-night");
+    $("h1").addClass("nitefont");
+    $(".abe").addClass("abeblink")
+
+
+     });
+  $(".day").click(function() {
+    $("body").removeClass("background-night");
+    $("html").removeClass("gradient-night");
+    $(".between").removeClass("between-night");
+    $(".abe").removeClass("abeblink")
+  })
+ });
+</script>
+
+</body>
+
+</html>

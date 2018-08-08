@@ -1,0 +1,169 @@
+html{
+  background: rgba(121, 160, 169, 0.33);
+  background: linear-gradient(rgb(54, 36, 132), #5E18A8, #B03CD5, #E154C1, #F86598, #FF9275, rgba(239, 222, 106, 0.09), rgb(137, 224, 253), #99ddf3, rgba(121, 160, 169, 0.33), wheat, #e8bf8a);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: 2s;
+}
+
+img{
+  height: 30px;
+  padding: 7px;
+}
+
+#container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+body{
+background-color: rgba(121, 160, 169, 0.33);
+border: 4.5px double rgba(236, 193, 236,0);
+border-radius: 5px;
+}
+
+h1{
+font-family: 'Bungee Hairline', cursive;
+  font-size: 7vh;
+}
+
+#daytime{
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.daytime a{
+  text-decoration: none;
+  color: rgb(500, 110, 228)
+
+}
+
+.daytime a:hover {
+  color: rgb(500, 218, 228);
+    font-family: 'Bungee Outline', cursive;
+}
+
+.between {
+  height: 2.5vh;
+  background-image: url("images/thrill.jpg");
+  background-size: 185px;
+  border: 4.5px solid rgb(236, 194, 236);
+  border-radius: 5px;
+}
+
+.between:hover {
+  border: 4.5px solid rgb(236, 221, 236);
+}
+
+#nite {
+    background-image: url("images/treesedit.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nite a:hover{
+  color: rgba(14, 199, 141, 0.68);
+    font-family: 'Bungee Outline', cursive;
+
+}
+
+ .nite a {
+  text-decoration: none;
+  color: rgb(129, 255, 202);
+
+}
+
+.background-night{
+  border-radius: 5px;
+
+  animation-name: blinkborder;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.gradient-night {
+  background-position: top;
+}
+
+.between-night{
+  height: 2.5vh;
+  background-image: url("images/thrill.jpg");
+  background-size: 185px;
+  border: 4.5px solid rgb(236, 194, 236);
+  border-radius: 5px;
+ animation-name: blink;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {border: 4.5px solid rgb(236, 194, 236);}
+    25%   {border: 4.5px solid rgba(222, 122, 122, 0.82) ;}
+    50%  {border: 4.5px solid rgba(208, 239, 230, 0.84) ;}
+    75% {border: 4.5px solid rgba(68, 131, 226, 0.89) ;}
+    100% {border: 4.5px solid rgb(236, 194, 236);}
+}
+
+@keyframes blinkborder {
+  0% {border: 4.5px double rgb(236, 194, 236);}
+  25%   {border: 4.5px double rgba(222, 122, 122, 0.82) ;}
+  50%  {border: 4.5px double rgba(208, 239, 230, 0.84) ;}
+  75% {border: 4.5px double rgba(68, 131, 226, 0.89) ;}
+  100% {border: 4.5px double rgb(236, 194, 236);}
+}
+
+
+.between-night:hover {
+  border: 4.5px solid rgba(0, 180, 208, 0.77) ;
+}
+
+.abeblink {
+  animation: abe 2s step-start 0s infinite;
+-webkit-animation: abe 2s step-start 0s infinite;
+}
+
+@keyframes abe {
+  50% {
+   opacity: 0.0;
+ }
+}
+
+@media only screen and (max-width: 1100px){
+#nite{
+  background-size: 45%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+#nite{
+  background-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+#nite{
+  background-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+#nite{
+  background-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 350px){
+#nite{
+  background-size: 75%;
+  }
+}
